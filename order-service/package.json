@@ -1,0 +1,49 @@
+{
+  "name": "some name",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "richpurba",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "uuidv4": "^6.1.1"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js",
+    "test": "mocha src/main/js/src/test/*.js --require esm"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^25.1.4",
+    "babel-loader": "^8.0.2",
+    "chai": "^4.3.0",
+    "css-loader": "^5.0.2",
+    "esm": "^3.2.25",
+    "mocha": "^8.3.0",
+    "mock-require": "^3.0.3",
+    "nodemon": "^2.0.2",
+    "sinon": "^9.2.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
